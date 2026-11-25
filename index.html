@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blu café · Café de especialidad en San Isidro</title>
+  <meta name="description" content="Café de especialidad, pastelería casera y un espacio cálido en San Isidro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Poppins:wght@300;400;500;600&family=Yellowtail&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Blu café, ir al inicio"><b>Blu</b><span>café</span></a>
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 1.5h20M1 8h20M1 14.5h20"/></svg>
+      </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="sobre.html">Sobre blu</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="carrito-btn" href="tienda.html#carrito" aria-label="Ver carrito">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="carrito-num" data-carrito-num hidden>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-titulo">
+      <img src="img/hero-medialunas.png" alt="Facturas de hojaldre recién horneadas con frutillas y naranja, y croissants rayados de frutos rojos" width="680" height="418" fetchpriority="high">
+      <div class="hero-card">
+        <h1 id="hero-titulo">Un momento<br>para vos</h1>
+        <p>Café recién hecho, pastelería casera y un espacio para disfrutar.</p>
+        <a class="hero-mob" href="sobre.html">DESCUBRÍ BLU</a>
+      </div>
+      <a class="flecha-link" href="sobre.html">Descubrí Blu <span class="flecha"></span></a>
+      <a class="bajar" href="#intro" aria-label="Seguir bajando">
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 1v17M2 11l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <section class="seccion" id="intro">
+      <div class="wrap intro">
+        <div>
+          <h2 class="titulo titulo-xl">Un café de barrio en San Isidro</h2>
+          <p class="bajada">Una casita de madera con toldo a rayas, mesas en la vereda y una barra donde el café se prepara sin apuro. Vení a desayunar, a trabajar un rato o a merendar con amigos.</p>
+          <ul class="sellos">
+            <li><b>Especialidad</b>Blend de Guatemala, Colombia y Brasil</li>
+            <li><b>Pastelería propia</b>Recién salida del horno, todos los días</li>
+            <li><b>Para todos</b>Opciones veganas, sin TACC y con leche de almendras</li>
+            <li><b>Pet friendly</b>¡Hasta tenemos cookies para perros!</li>
+          </ul>
+          <a class="btn" href="menu.html">Ver el menú</a>
+        </div>
+        <figure><img src="img/croissants.jpg" alt="Croissants de manteca recién horneados, vistos de cerca" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="seccion seccion-beige" aria-labelledby="carta-titulo">
+      <div class="wrap">
+        <div class="encabezado">
+          <div>
+            <h2 class="titulo titulo-l" id="carta-titulo">Nuestra carta</h2>
+            <p class="bajada">Del primer café de la mañana al almuerzo.</p>
+          </div>
+          <a class="flecha-link" href="menu.html">Ver todo <span class="flecha"></span></a>
+        </div>
+        <div class="cards">
+          <a class="card" href="menu.html#cafeteria"><img src="img/menu/sea-salt-caramel.jpg" alt="Sea Salt Caramel" loading="lazy"><span>Cafetería<small>70 opciones</small></span></a>
+          <a class="card" href="menu.html#pasteleria"><img src="img/menu/alfajor-glaseado.jpg" alt="Alfajor Glaseado" loading="lazy"><span>Pastelería<small>Hecha acá</small></span></a>
+          <a class="card" href="menu.html#todo-el-dia"><img src="img/menu/toston-de-palta.jpg" alt="Tostón de Palta" loading="lazy"><span>Todo el día<small>Desayuno y brunch</small></span></a>
+          <a class="card" href="menu.html#almuerzo"><img src="img/menu/pizza-blu-cheese.jpg" alt="Pizza Blu Cheese" loading="lazy"><span>Almuerzo<small>Masa madre</small></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="video-titulo">
+      <div class="wrap video-bloque">
+        <div class="video-marco">
+          <video src="video/blu-espacio.mp4" poster="img/video-poster.jpg" muted loop playsinline controls preload="metadata" data-autoplay aria-label="Recorrido por Blu café: la barra, el salón, el patio y los cafés"></video>
+        </div>
+        <div>
+          <h2 class="titulo titulo-xl" id="video-titulo">Un lugar para quedarse</h2>
+          <p class="bajada">Luz natural, plantas, el mural azul del patio y café filtrado en chemex. Mirá cómo se vive un día en Blu.</p>
+          <a class="btn btn-linea" href="sobre.html">Conocé el espacio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-beige" aria-labelledby="fav-titulo">
+      <div class="wrap">
+        <div class="encabezado">
+          <h2 class="titulo titulo-l" id="fav-titulo">Los favoritos de la casa</h2>
+          <a class="flecha-link" href="menu.html#todo-el-dia">Desayunos y brunch <span class="flecha"></span></a>
+        </div>
+        <div class="destacados">
+          <article class="destacado"><img src="img/menu/torre-de-pancakes.jpg" alt="Torre de Pancakes" loading="lazy"><div><h3>Torre de Pancakes</h3><p>Pancakes de arándanos con manzana asada, banana, ciruela, miel de hibiscus, escamas de coco y pistacho</p><p class="precio">$ 13.000</p></div></article>
+          <article class="destacado"><img src="img/menu/huevos-turcos.jpg" alt="Huevos Turcos" loading="lazy"><div><h3>Huevos Turcos</h3><p>Yogurt especiado con dos huevos poché y chili oil.</p><p class="precio">$ 13.000</p></div></article>
+          <article class="destacado"><img src="img/menu/cookie-doble-choco-mani.jpg" alt="Cookie Doble Choco &amp; Maní" loading="lazy"><div><h3>Cookie Doble Choco &amp; Maní</h3><p>Cookie doble chocolate, con un relleno de mantequilla de maní y chocolate blanco y un toque de sal en escamas</p><p class="precio">$ 7.800</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2 class="titulo titulo-l">Te esperamos</h2>
+            <p>Juan B. de La Salle 441, San Isidro · Mar–Dom desde las 8</p>
+          </div>
+          <a class="btn" href="info.html">Cómo llegar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="escribinos">O escribinos por acá</p>
+      <div class="redes">
+        <a href="https://www.instagram.com/blucafe.sanisidro/" target="_blank" rel="noopener"><svg viewBox="0 0 26 26" aria-hidden="true"><rect x="3" y="3" width="20" height="20" rx="6"/><circle cx="13" cy="13" r="4.6"/><circle cx="18.6" cy="7.4" r=".8" fill="currentColor"/></svg>@blucafe.sanisidro</a>
+        <a href="tel:+541112345678"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M7 3.5l3 4.5-2 2.3c1.3 3 4 5.7 7 7l2.3-2 4.5 3-1.8 3.5C13 22 4 13 3.5 5.3z"/></svg>+54 11 1234 5678</a>
+        <a href="mailto:blu.cafe@gmail.com"><svg viewBox="0 0 26 26" aria-hidden="true"><rect x="3" y="6" width="20" height="14"/><path d="M3 6l10 8 10-8M3 20l7.5-7M23 20l-7.5-7"/></svg>blu.cafe@gmail.com</a>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 Blu café · Juan B. de La Salle 441, San Isidro · Proyecto académico de Delfina Vega (UP), no es el sitio oficial de Blu.</span>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a> <a href="menu.html">Menú</a> <a href="tienda.html">Tienda</a> <a href="sobre.html">Sobre blu</a> <a href="info.html">Info</a> <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+</body></html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda · Blu café</title>
+  <meta name="description" content="Tienda online de Blu café: café en grano, pastelería para llevar, merch y regalos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600&family=Poppins:wght@300;400;500;600&family=Yellowtail&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Blu café, ir al inicio"><b>Blu</b><span>café</span></a>
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M1 1.5h20M1 8h20M1 14.5h20"/></svg>
+      </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="tienda.html" aria-current="page">Tienda</a></li>
+        <li><a href="sobre.html">Sobre blu</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="carrito-btn" href="tienda.html#carrito" aria-label="Ver carrito">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="carrito-num" data-carrito-num hidden>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="tienda-intro">
+      <div class="wrap">
+        <p class="firma">Llevate un poco de Blu</p>
+        <h1 class="titulo titulo-xl">Tienda</h1>
+        <p class="bajada">Café para tu casa, pastelería para llevar y cositas Blu. Sumá lo que quieras al carrito y retiralo por el local.</p>
+      </div>
+    </section>
+
+    <div class="wrap tienda">
+      <div>
+        <div class="filtros" role="group" aria-label="Filtrar productos">
+          <button type="button" data-filtro="todo" aria-pressed="true">Todo</button>
+          <button type="button" data-filtro="cafe" aria-pressed="false">Café</button>
+          <button type="button" data-filtro="pasteleria" aria-pressed="false">Pastelería</button>
+          <button type="button" data-filtro="merch" aria-pressed="false">Merch</button>
+          <button type="button" data-filtro="regalos" aria-pressed="false">Regalos</button>
+        </div>
+        <ul class="productos">
+          <li class="producto" data-cat="cafe">
+            <article>
+              <img src="img/menu/1-4-de-cafe.jpg" alt="1/4 de Café" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Café</p>
+                <h2>1/4 de Café</h2>
+                <p class="producto-desc">Nuestro blend de Guatemala, Colombia y Brasil. 250 g, en grano o molido para tu cafetera.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 32.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="1-4-de-cafe" data-nombre="1/4 de Café" data-precio="32000" data-foto="img/menu/1-4-de-cafe.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="pasteleria">
+            <article>
+              <img src="img/menu/alfajor-blu.jpg" alt="Alfajor Blu" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Pastelería</p>
+                <h2>Alfajor Blu</h2>
+                <p class="producto-desc">De cacao con notas de café y naranja, bañado en chocolate amargo 70 %.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 7.500</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="alfajor-blu" data-nombre="Alfajor Blu" data-precio="7500" data-foto="img/menu/alfajor-blu.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="pasteleria">
+            <article>
+              <img src="img/menu/alfajor-glaseado.jpg" alt="Alfajor Glaseado" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Pastelería</p>
+                <h2>Alfajor Glaseado</h2>
+                <p class="producto-desc">El clásico: dos tapas de cacao, dulce de leche y glaseado.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 7.500</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="alfajor-glaseado" data-nombre="Alfajor Glaseado" data-precio="7500" data-foto="img/menu/alfajor-glaseado.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="pasteleria">
+            <article>
+              <img src="img/menu/alfajor-vegano.jpg" alt="Alfajor Vegano" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Pastelería</p>
+                <h2>Alfajor Vegano</h2>
+                <p class="producto-desc">Sin ingredientes de origen animal, con todo el sabor.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 9.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="alfajor-vegano" data-nombre="Alfajor Vegano" data-precio="9000" data-foto="img/menu/alfajor-vegano.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="pasteleria">
+            <article>
+              <img src="img/menu/cookie-doble-choco-mani.jpg" alt="Cookie Doble Choco &amp; Maní" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Pastelería</p>
+                <h2>Cookie Doble Choco &amp; Maní</h2>
+                <p class="producto-desc">Doble chocolate, relleno de maní y chocolate blanco, con sal en escamas.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 7.800</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="cookie-doble-choco-mani" data-nombre="Cookie Doble Choco &amp; Maní" data-precio="7800" data-foto="img/menu/cookie-doble-choco-mani.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="pasteleria">
+            <article>
+              <img src="img/menu/cookie-de-avellanas.jpg" alt="Cookie de Avellanas" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Pastelería</p>
+                <h2>Cookie de Avellanas</h2>
+                <p class="producto-desc">Vegana y sin azúcar agregada.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 7.500</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="cookie-de-avellanas" data-nombre="Cookie de Avellanas" data-precio="7500" data-foto="img/menu/cookie-de-avellanas.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="pasteleria">
+            <article>
+              <img src="img/menu/brownie-sin-tacc.jpg" alt="Brownie sin TACC" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Pastelería</p>
+                <h2>Brownie sin TACC</h2>
+                <p class="producto-desc">Húmedo, intenso y sin gluten.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 10.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="brownie-sin-tacc" data-nombre="Brownie sin TACC" data-precio="10000" data-foto="img/menu/brownie-sin-tacc.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="pasteleria">
+            <article>
+              <img src="img/menu/budin-de-citricos.jpg" alt="Budín de Cítricos" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Pastelería</p>
+                <h2>Budín de Cítricos</h2>
+                <p class="producto-desc">Con merengue y coulis de limón.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 8.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="budin-de-citricos" data-nombre="Budín de Cítricos" data-precio="8000" data-foto="img/menu/budin-de-citricos.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="merch">
+            <article>
+              <img src="img/tienda/gorra.jpg" alt="Gorra Blu" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Merch</p>
+                <h2>Gorra Blu</h2>
+                <p class="producto-desc">Gorra de gabardina azul con el logo de Blu bordado. Talle único, regulable.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 35.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="gorra-blu" data-nombre="Gorra Blu" data-precio="35000" data-foto="img/tienda/gorra.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="merch">
+            <article>
+              <img src="img/tienda/remera.jpg" alt="Remera Bowen" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Merch</p>
+                <h2>Remera Bowen</h2>
+                <p class="producto-desc">Remera de algodón color crema con la fachada de Blu estampada. Talles S a XL.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 55.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="remera-bowen" data-nombre="Remera Bowen" data-precio="55000" data-foto="img/tienda/remera.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="merch">
+            <article>
+              <img src="img/tienda/tote-azul.jpg" alt="Tote Bag Azul" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Merch</p>
+                <h2>Tote Bag Azul</h2>
+                <p class="producto-desc">Bolsa de lienzo azul con el logo en crema. Entra la compu y algo más.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 45.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="tote-bag-azul" data-nombre="Tote Bag Azul" data-precio="45000" data-foto="img/tienda/tote-azul.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="merch">
+            <article>
+              <img src="img/tienda/tote-clarita.jpg" alt="Tote Bag Clarita" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Merch</p>
+                <h2>Tote Bag Clarita</h2>
+                <p class="producto-desc">Bolsa de lienzo natural con la casita de Blu en azul.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 45.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="tote-bag-clarita" data-nombre="Tote Bag Clarita" data-precio="45000" data-foto="img/tienda/tote-clarita.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="merch">
+            <article>
+              <img src="img/tienda/rompecabezas.jpg" alt="Rompecabezas" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Merch</p>
+                <h2>Rompecabezas</h2>
+                <p class="producto-desc">500 piezas con la ilustración de nuestra casita de madera.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 30.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="rompecabezas" data-nombre="Rompecabezas" data-precio="30000" data-foto="img/tienda/rompecabezas.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="producto" data-cat="regalos">
+            <article>
+              <img src="img/menu/flores.jpg" alt="Flores" loading="lazy" width="600" height="600">
+              <div class="producto-info">
+                <p class="producto-cat">Regalos</p>
+                <h2>Flores</h2>
+                <p class="producto-desc">Ramo de flores de estación, listo para regalar.</p>
+                <div class="producto-pie">
+                  <p class="precio">$ 37.000</p>
+                  <button class="btn btn-agregar" type="button" data-agregar data-id="flores" data-nombre="Flores" data-precio="37000" data-foto="img/menu/flores.jpg">Agregar</button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <p class="aviso">Precios en pesos argentinos según la carta de Blu (octubre 2026). Las fotos del merch son ilustraciones hechas para este proyecto.</p>
+      </div>
+
+      <aside class="carrito" id="carrito" aria-labelledby="carrito-titulo">
+        <h2 class="titulo" id="carrito-titulo">Tu carrito</h2>
+        <p class="carrito-vacio" data-vacio>Todavía no agregaste nada. ¡Elegí algo rico!</p>
+        <ul class="carrito-lista" data-lista></ul>
+        <div class="carrito-total"><span>Total</span><b data-total>$ 0</b></div>
+        <button class="btn btn-comprar" type="button" data-comprar disabled>Finalizar compra</button>
+        <button class="vaciar" type="button" data-vaciar hidden>Vaciar carrito</button>
+        <p class="carrito-nota">Retiro en Juan B. de La Salle 441, San Isidro.</p>
+        <p class="visually-hidden" aria-live="polite" data-anuncio></p>
+      </aside>
+    </div>
+
+    <a class="carrito-flotante" href="#carrito" data-flotante hidden>Ver carrito · <span data-flotante-txt></span></a>
+  </main>
+
+  <dialog class="checkout" id="checkout" aria-labelledby="checkout-titulo">
+    <form class="form" method="dialog" data-form-compra novalidate>
+      <h2 class="titulo titulo-l" id="checkout-titulo">Finalizar compra</h2>
+      <ul class="checkout-resumen" data-resumen></ul>
+      <p class="checkout-total">Total: <b data-resumen-total></b></p>
+      <input name="nombre" type="text" placeholder="Nombre y apellido" autocomplete="name">
+      <input name="mail" type="email" placeholder="Mail" autocomplete="email">
+      <select name="pago" aria-label="Forma de pago">
+        <option value="Mercado Pago">Mercado Pago</option>
+        <option value="Transferencia">Transferencia</option>
+        <option value="Efectivo al retirar">Efectivo al retirar</option>
+      </select>
+      <p class="error" data-error-compra hidden></p>
+      <div class="checkout-botones">
+        <button class="btn btn-linea" type="button" data-cerrar-checkout>Seguir comprando</button>
+        <button class="btn" type="submit">Confirmar pedido</button>
+      </div>
+      <p class="checkout-nota">Sitio académico: el pedido es una simulación y no se cobra nada.</p>
+    </form>
+    <div class="checkout-ok" data-ok hidden>
+      <p class="firma">¡Gracias!</p>
+      <h2 class="titulo titulo-l">Recibimos tu pedido</h2>
+      <p data-ok-txt></p>
+      <button class="btn" type="button" data-cerrar-checkout>Volver a la tienda</button>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="escribinos">O escribinos por acá</p>
+      <div class="redes">
+        <a href="https://www.instagram.com/blucafe.sanisidro/" target="_blank" rel="noopener"><svg viewBox="0 0 26 26" aria-hidden="true"><rect x="3" y="3" width="20" height="20" rx="6"/><circle cx="13" cy="13" r="4.6"/><circle cx="18.6" cy="7.4" r=".8" fill="currentColor"/></svg>@blucafe.sanisidro</a>
+        <a href="tel:+541112345678"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M7 3.5l3 4.5-2 2.3c1.3 3 4 5.7 7 7l2.3-2 4.5 3-1.8 3.5C13 22 4 13 3.5 5.3z"/></svg>+54 11 1234 5678</a>
+        <a href="mailto:blu.cafe@gmail.com"><svg viewBox="0 0 26 26" aria-hidden="true"><rect x="3" y="6" width="20" height="14"/><path d="M3 6l10 8 10-8M3 20l7.5-7M23 20l-7.5-7"/></svg>blu.cafe@gmail.com</a>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 Blu café · Juan B. de La Salle 441, San Isidro · Proyecto académico de Delfina Vega (UP), no es el sitio oficial de Blu.</span>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a> <a href="menu.html">Menú</a> <a href="tienda.html">Tienda</a> <a href="sobre.html">Sobre blu</a> <a href="info.html">Info</a> <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+</body></html>
